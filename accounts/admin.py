@@ -10,6 +10,6 @@ class UserAccountAdmin(UserAdmin):
     add_form = UserAccountCreationForm
     form = UserAccountChangeForm
     model = UserAccount
-    list_display = ['name', 'email', 'joining_date', 'is_staff', 'date_of_birth']
+    list_display = ['username', 'email', 'joining_date', 'is_staff', 'date_of_birth']
 
 admin.site.register(UserAccount, UserAccountAdmin)
